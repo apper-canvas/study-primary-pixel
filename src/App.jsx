@@ -9,6 +9,7 @@ import Courses from "@/components/pages/Courses";
 import Assignments from "@/components/pages/Assignments";
 import Schedule from "@/components/pages/Schedule";
 import Grades from "@/components/pages/Grades";
+import Students from "@/components/pages/Students";
 import Login from "@/components/pages/Login";
 import Signup from "@/components/pages/Signup";
 import Callback from "@/components/pages/Callback";
@@ -129,12 +130,13 @@ function AppContent() {
         <Route path="/error" element={<ErrorPage />} />
         <Route path="/prompt-password/:appId/:emailAddress/:provider" element={<PromptPassword />} />
         <Route path="/reset-password/:appId/:fields" element={<ResetPassword />} />
-        <Route path="/" element={<Layout />}>
+<Route path="/" element={<Layout />}>
           <Route index element={<Dashboard />} />
           <Route path="courses" element={<Courses />} />
           <Route path="assignments" element={<Assignments />} />
           <Route path="schedule" element={<Schedule />} />
           <Route path="grades" element={<Grades />} />
+          <Route path="students" element={<Students />} />
         </Route>
         <Route path="*" element={<NotFound />} />
       </Routes>

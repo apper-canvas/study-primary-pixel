@@ -3,8 +3,9 @@ import ApperIcon from "@/components/ApperIcon";
 import { motion } from "framer-motion";
 
 const Sidebar = () => {
-  const navItems = [
+const navItems = [
     { to: "/", icon: "LayoutDashboard", label: "Dashboard" },
+    { to: "/students", icon: "Users", label: "Students" },
     { to: "/courses", icon: "BookOpen", label: "Courses" },
     { to: "/assignments", icon: "ClipboardList", label: "Assignments" },
     { to: "/schedule", icon: "Calendar", label: "Schedule" },
