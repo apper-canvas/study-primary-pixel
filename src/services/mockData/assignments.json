@@ -1,0 +1,90 @@
+[
+  {
+    "Id": 1,
+    "title": "Programming Assignment 1",
+    "description": "Implement a sorting algorithm in Python",
+    "courseId": 1,
+    "dueDate": "2024-12-20T23:59:00",
+    "priority": "high",
+    "completed": false,
+    "grade": null,
+    "weight": 15
+  },
+  {
+    "Id": 2,
+    "title": "Midterm Exam",
+    "description": "Chapters 1-5 coverage",
+    "courseId": 1,
+    "dueDate": "2024-12-18T14:00:00",
+    "priority": "high",
+    "completed": false,
+    "grade": null,
+    "weight": 25
+  },
+  {
+    "Id": 3,
+    "title": "Integration Practice Problems",
+    "description": "Complete problems 1-20 from textbook",
+    "courseId": 2,
+    "dueDate": "2024-12-22T23:59:00",
+    "priority": "medium",
+    "completed": false,
+    "grade": null,
+    "weight": 10
+  },
+  {
+    "Id": 4,
+    "title": "Literary Analysis Essay",
+    "description": "5-page analysis of Shakespeare's Hamlet",
+    "courseId": 3,
+    "dueDate": "2024-12-25T23:59:00",
+    "priority": "high",
+    "completed": false,
+    "grade": null,
+    "weight": 20
+  },
+  {
+    "Id": 5,
+    "title": "Lab Report 3",
+    "description": "Newton's Laws experiment write-up",
+    "courseId": 4,
+    "dueDate": "2024-12-19T23:59:00",
+    "priority": "medium",
+    "completed": true,
+    "grade": 92,
+    "weight": 15
+  },
+  {
+    "Id": 6,
+    "title": "Research Proposal",
+    "description": "Topic proposal for final research paper",
+    "courseId": 5,
+    "dueDate": "2024-12-21T23:59:00",
+    "priority": "low",
+    "completed": false,
+    "grade": null,
+    "weight": 10
+  },
+  {
+    "Id": 7,
+    "title": "Quiz 4",
+    "description": "Online quiz covering recent lectures",
+    "courseId": 2,
+    "dueDate": "2024-12-17T23:59:00",
+    "priority": "high",
+    "completed": true,
+    "grade": 88,
+    "weight": 5
+  },
+  {
+    "Id": 8,
+    "title": "Discussion Board Post",
+    "description": "Respond to week 12 prompt",
+    "courseId": 3,
+    "dueDate": "2024-12-23T23:59:00",
+    "priority": "low",
+    "completed": false,
+    "grade": null,
+    "weight": 5
+  }
+]
