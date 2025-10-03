@@ -1,6 +1,4 @@
-import assignmentsData from "../mockData/assignments.json";
-
-let assignments = [...assignmentsData];
+let assignments = [];
 
 const delay = () => new Promise(resolve => setTimeout(resolve, 300));
 

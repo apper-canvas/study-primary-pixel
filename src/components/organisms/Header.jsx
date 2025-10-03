@@ -1,8 +1,9 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
 import ApperIcon from "@/components/ApperIcon";
 import Button from "@/components/atoms/Button";
-
+import { AuthContext } from "../../App";
 const Header = ({ onMenuClick }) => {
+  const { logout } = useContext(AuthContext);
   const [currentTime, setCurrentTime] = useState(new Date());
 
   useState(() => {
@@ -43,13 +44,17 @@ const Header = ({ onMenuClick }) => {
             </div>
           </div>
 
-          <div className="flex items-center gap-3">
+<div className="flex items-center gap-3">
             <Button variant="ghost" size="sm" className="hidden sm:flex">
               <ApperIcon name="Search" size={18} />
               <span className="hidden md:inline">Search</span>
             </Button>
             <Button variant="ghost" size="sm">
               <ApperIcon name="Bell" size={18} />
+            </Button>
+            <Button variant="ghost" size="sm" onClick={logout}>
+              <ApperIcon name="LogOut" size={18} />
+              <span className="hidden md:inline">Logout</span>
             </Button>
             <div className="w-10 h-10 bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center shadow-md">
               <span className="text-white font-bold text-sm">JS</span>
