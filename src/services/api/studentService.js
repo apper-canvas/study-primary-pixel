@@ -75,13 +75,23 @@ export const studentService = {
       const apperClient = getApperClient();
       
       // Only include Updateable fields
+// Format Tags field properly - remove spaces around commas
+      let formattedTags = "";
+      if (studentData.Tags && studentData.Tags.trim()) {
+        formattedTags = studentData.Tags
+          .split(',')
+          .map(tag => tag.trim())
+          .filter(tag => tag.length > 0)
+          .join(',');
+      }
+
       const record = {
         Name: studentData.Name || "",
         first_name_c: studentData.first_name_c || "",
         last_name_c: studentData.last_name_c || "",
         email_c: studentData.email_c || "",
         phone_c: studentData.phone_c || "",
-        Tags: studentData.Tags || ""
+        Tags: formattedTags
       };
 
       // Remove empty fields
@@ -139,6 +149,16 @@ export const studentService = {
       const apperClient = getApperClient();
       
       // Only include Updateable fields
+// Format Tags field properly - remove spaces around commas
+      let formattedTags = "";
+      if (studentData.Tags && studentData.Tags.trim()) {
+        formattedTags = studentData.Tags
+          .split(',')
+          .map(tag => tag.trim())
+          .filter(tag => tag.length > 0)
+          .join(',');
+      }
+
       const record = {
         Id: parseInt(id),
         Name: studentData.Name,
@@ -146,7 +166,7 @@ export const studentService = {
         last_name_c: studentData.last_name_c,
         email_c: studentData.email_c,
         phone_c: studentData.phone_c,
-        Tags: studentData.Tags
+        Tags: formattedTags
       };
 
       // Remove empty fields except Id
